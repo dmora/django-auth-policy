@@ -33,7 +33,7 @@ FAILED_AUTH_USERNAME_MAX = getattr(settings, 'FAILED_AUTH_USERNAME_MAX', 3)
 # FAILED_AUTH_PERIOD that triggers a lockout (for a 'three strikes and you're
 # out' policy)
 # Set to None to disable this feature
-FAILED_AUTH_ADDRESS_MAX = getattr(settings, 'FAILED_AUTH_ADDRESS_MAX', 3)
+FAILED_AUTH_ADDRESS_MAX = getattr(settings, 'FAILED_AUTH_ADDRESS_MAX', None)
 
 # Period used to measure the number of failed logins, in seconds
 # Set to None to count all failed logins that count towards a lockout
